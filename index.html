@@ -1,32 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="page-title">Bookmark Categories</title>
+    <title>Marks</title>
     <link rel="stylesheet" href="/static/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <h1 id="site-name"></h1>
+        <h1>Marks</h1>
     </header>
     <main>
         <div id="category-grid">
-            <a href="" class="category-item" id="news-link">
+            <a href="/categories/news.html" class="category-item">
                 <h2>News</h2>
             </a>
-            <a href="" class="category-item" id="movies-link">
+            <a href="/categories/movies.html" class="category-item">
                 <h2>Movies</h2>
             </a>
         </div>
     </main>
-    <script src="/config.js"></script>
-    <script>
-        document.getElementById('site-name').textContent = config.siteName;
-        document.getElementById('page-title').textContent = config.siteName + " - Bookmark Categories";
-        document.getElementById('news-link').href = config.filePatterns.newsHtml;
-        document.getElementById('movies-link').href = config.filePatterns.moviesHtml;
-    </script>
 </body>
+
 </html>
