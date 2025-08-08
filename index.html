@@ -7,18 +7,7 @@
     <title>Marks</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="manifest" href="/manifest.json">
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js').then(registration => {
-                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
-                }, err => {
-                    console.log('ServiceWorker registration failed: ', err);
-                });
-            });
-        }
-    </script>
+    <link rel="icon" href="./assets/Icon/letter-m.png" type="image/x-icon">
 </head>
 
 <body>
@@ -35,6 +24,9 @@
             </a>
             <a href="./books/" class="category-item">
                 <h2>Books</h2>
+            </a>
+            <a href="./work/" class="category-item">
+                <h2>Work</h2>
             </a>
             <a href="./tools/" class="category-item">
                 <h2>Tools</h2>
